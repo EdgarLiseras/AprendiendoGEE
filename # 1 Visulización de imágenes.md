@@ -1,8 +1,10 @@
 # Visualización de imágenes
 
+Permite visualizar imagenes en el **Visor de imagenes de GEE**
+
 ## Instanciación de una imagen
-Instanciar una imagen con el constructor de imágenes, establecer las coordenadas y la ampliación del mapa, agregar un capa y 
-colocar el mapa instanciado alli.
+La ID de la imagen permite indentificar la imagen que se va a mostrar, con ello se puede instanciar la imagen usando el constructor de imágenes ee.Image(). Luego se usa **Map.setCenter()** para establecer las coordenadas y la ampliación de la imagen. Finalmente se agrega un capa o layet por medio de **Map.addLayer()** al cual se le pasa la imagen que queremos desplegar.
+
 ``` javascript
 var eeImagen = ee.Image('CGIAR/SRTM90_V4');
 var longitud = -112.8598;
