@@ -35,4 +35,4 @@ $\displaystle\frac{1}{1+x}$
 
 $\displaystyle\prod_{i=1}^n p_i$
 
-
+$$E = mc^2$$
