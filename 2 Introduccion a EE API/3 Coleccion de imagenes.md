@@ -6,4 +6,21 @@ Ejemplo: Buscar "landsat 8 toa", e importe con el botón "Import" a la cabecera 
 var L8 = ee.ImageCollection('LANDSAT/LC08/C01/T1_TOA');
 ```
 ## Filtrado de colecciones de imágenes
+Una colección representa cada escena recopilada de la tierra. En ocaciones es necesario una o varias escenas para nuestro propósico (como probar algoritmos, o calcular el índice de vegetación). La forma de limitar las escenas de la colección necesaria es por medio de , temporales o espaciales, aplicadas a la colección.
+
+Por ejemplo: para filtrar la colección de imágenes que cubre el área de interes, se debe definir primero dicha área. Para definir la geometria (punto, linea, área) de interes se usa las herramientas de dibujo en el área de visualización. Una ves definido las propiedades geometricas se despliegan en el área de importaciónes, puede cambiarse el nombre asignado a la geometría.
+
+### Filtrado espacial
+```javascript
+var L8FiltradoEspacial = L8.filterBounds(geometriaDeInteres);
+print('Colección espacialmente filtrada', L8FiltradoEspacial);
+```
+### Filtrado temporal
+```javascript
+var inicio = '2015-01-01';
+var fin = '2015-12-31';
+var L8FiltradoTemporal = L8FiltradoEspacial.filterDate(inicio,fin);
+print('Colección temporalmente filtrada', L8FiltradoTemporal)
+```
+
 
