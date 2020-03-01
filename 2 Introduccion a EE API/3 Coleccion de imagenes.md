@@ -22,5 +22,5 @@ var fin = '2015-12-31';
 var L8FiltradoTemporal = L8FiltradoEspacial.filterDate(inicio,fin);
 print('Colección temporalmente filtrada', L8FiltradoTemporal)
 ```
-
+[Siguiente lección >>](https://developers.google.com/earth-engine/tutorial_api_04)
 
