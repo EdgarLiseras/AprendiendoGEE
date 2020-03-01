@@ -64,4 +64,4 @@ Map.addLayer(landsat2016,vista,'colección landsar 2016')
 
 
 
-
+$$E = mc^2$$
