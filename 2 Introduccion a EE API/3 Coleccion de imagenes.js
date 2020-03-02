@@ -1,1 +1,0 @@
-// https://developers.google.com/earth-engine/tutorial_api_04

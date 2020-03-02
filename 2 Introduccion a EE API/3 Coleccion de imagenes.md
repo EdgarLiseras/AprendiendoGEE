@@ -55,13 +55,3 @@ Map.addLayer(escana,vista,'composición en color verdadero')
 var landsat2016= Coleccion.filterDate('2016-01-01','2016-12-31');
 Map.addLayer(landsat2016,vista,'colección landsar 2016')
 ```
-
-
-
-
-
-
-
-
-
-$$E = mc^2$$
