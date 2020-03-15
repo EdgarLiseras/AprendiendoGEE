@@ -5,8 +5,11 @@ Una ves que manejamos JS, los objeto que con ella se crea se puede colocar en un
 
 _Por ejemplo:_ una variable de tipo cadena se almacena con el contenedor ee.String(cadena) el cual devuelve un objeto cadena pero Earth Engine.
 
-### Métodos de objetos EE
-Los objetos EE deben ser tratados con los métodos propios de dicho objeto, por ejemplo, para extraer un elemento de una cadena uvicada en el segundo lugar se usa el nombre de la cadena y el método get() al cual se le pasa el índice correspondiente.
+## Métodos de objetos EE
+Los objetos EE deben ser tratados con los métodos propios de dicho objeto, 
+
+### Cadenas en EE
+_Ejemplo:_ extraer un elemento de una cadena uvicada en el segundo lugar usando el nombre de la cadena y el método get() al cual se le pasa el índice correspondiente.
 ```javascript
 var cadena = 'Hola mundo';
 var eeCadena = ee.String(cadena);
@@ -14,6 +17,7 @@ print('Cadena', eeCadena);
 print('Segundo carácter', eeCadena.get(1) // Extrae el 2do elemento
 ```
 
+### Números en EE
 Se puede utilizar la biblioteca de funciones de JS para generar número específicos.
 
 _Ejemplo:_ determinar el logaritmo del número e.
@@ -33,7 +37,8 @@ _Ejemplo:_ sumar 0.77 al logaritmo del número e, que se obtuvo en el ejemplo an
 var sum = logE.add(0.77); // puede dar un error
 var sum = ee.Number(logE).add(0.77); // le recalcamos a EE que logE es de tipo ee.Number.
 ```
-## Lista en EE
+
+### Lista en EE
 _Ejemplo:_ definir una lista en JS y convertirlo en un objeto EE, definir también una secuencia usando un método de lista EE. Luego imprimir el tercer elemento de la lista y de la secuencia.
 ```javascript
 var lista = [1,2,3,4];
@@ -43,8 +48,7 @@ print('Lista 3er elem', eeLista.get(2));
 print('Secuencia 3er elem', eeSecuencia.get(2));
 ```
 
-## Diccionario en EE
-
+### Diccionario en EE
 _Ejemplo:_ construir un diccionario EE y mostrar su contenido uno por uno, usando el método get() al cual se le pasa la clave del valor que se desea conocer su valor. Luego mostrar las claves del diccionario usando el método keys(), y los valores del diccionario usando el método values() del objeto diccionario EE.
 ```javascript
 var diccionario = ee.Dictionary({
@@ -58,7 +62,8 @@ print('Número de Razón dorada', diccionario.get('phi');
 print('Las claves', diccionario.keys());
 print('Los valores', diccionario.values());
 ```
-## Date en EE
+
+### Date en EE
 ```javascript
 var eeDate = ee.Date('2020-02-24');
 print('Día específico YMD',eeDate);
