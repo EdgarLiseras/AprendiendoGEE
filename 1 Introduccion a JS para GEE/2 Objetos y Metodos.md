@@ -1,15 +1,15 @@
-# Objetos y sus métodos en Earth Engine
+# Objetos y sus métodos
 
-## Objetos EE
-Una ves que manejamos JS, los objeto que con ella se crea se puede colocar en un contenedor que se envía al servidor de Earth Engine y el cual devuelve un objeto Earth Engine. Este objeto deber ser tratado como tal, con sus atributos y métodos propios.
+## Los objetos
+Los objeto que se crean con JS se puede colocar en un contenedor de objetos que se envía al servidor de Earth Engine, el cual devuelve un objeto Earth Engine. Este objeto deber ser manejado por medio de sus atributos y sus métodos, que son valores agregados que vacilitan la utilización del mismos.
 
-_Por ejemplo:_ una variable de tipo cadena se almacena con el contenedor ee.String(cadena) el cual devuelve un objeto cadena pero Earth Engine.
+_Por ejemplo:_ una variable de tipo cadena se almacena con el contenedor __e.String(variable)__ el cual devuelve un objeto Earth Engine de tipo cadena que cuenta con atributos y método propios.
 
-## Métodos de objetos EE
-Los objetos EE deben ser tratados con los métodos propios de dicho objeto, 
+## Los métodos de objetos
+Los objetos deben ser tratados con los métodos y atributos propios de los mismos.
 
-### Cadenas en EE
-_Ejemplo:_ extraer un elemento de una cadena uvicada en el segundo lugar usando el nombre de la cadena y el método get() al cual se le pasa el índice correspondiente.
+### Los objetos cadenas
+_Ejemplo:_ extraer un elemento de una cadena uvicada en el segundo lugar usando el nombre de la cadena y el método __get()__ al cual se le pasa el índice correspondiente.
 ```javascript
 var cadena = 'Hola mundo';
 var eeCadena = ee.String(cadena);
